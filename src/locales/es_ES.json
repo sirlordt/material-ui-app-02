@@ -1,0 +1,15 @@
+{
+  "translations" : {
+    "CHANGE LANGUAGE": "CAMBIAR DE IDIOMA",
+    "RETURN BACK": "VOLVER ATRÁS",
+    "System": "Sistema",
+    "Business": "Negocio",
+    "User": "Usuario",
+    "Profile": "Perfil",
+    "Others": "Otros",
+    "Login": "Inicio de Sesión",
+    "Manager of Groups": "Administración de Grupos",
+    "Manager of Operators": "Administración de Operadores",
+    "Landing": "Inicio"
+  }
+}

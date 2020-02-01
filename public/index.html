@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <style type="text/css">
+
+      .MuiCircularProgress-root {
+        display: inline-block;
+      }
+      .MuiCircularProgress-static {
+        transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      }
+      .MuiCircularProgress-indeterminate {
+        animation: MuiCircularProgress-keyframes-circular-rotate 1.4s linear infinite;
+      }
+      .MuiCircularProgress-colorPrimary {
+        color: #d32f2f;
+      }
+      .MuiCircularProgress-colorSecondary {
+        color: #7c4dff;
+      }
+      .MuiCircularProgress-svg {
+        display: block;
+      }
+      .MuiCircularProgress-circle {
+        stroke: currentColor;
+      }
+      .MuiCircularProgress-circleStatic {
+        transition: stroke-dashoffset 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      }
+      .MuiCircularProgress-circleIndeterminate {
+        animation: MuiCircularProgress-keyframes-circular-dash 1.4s ease-in-out infinite;
+        stroke-dasharray: 80px, 200px;
+        stroke-dashoffset: 0px;
+      }
+      @-moz-keyframes MuiCircularProgress-keyframes-circular-rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @-moz-keyframes MuiCircularProgress-keyframes-circular-dash {
+        0% {
+          stroke-dasharray: 1px, 200px;
+          stroke-dashoffset: 0px;
+        }
+        50% {
+          stroke-dasharray: 100px, 200px;
+          stroke-dashoffset: -15px;
+        }
+        100% {
+          stroke-dasharray: 100px, 200px;
+          stroke-dashoffset: -125px;
+        }
+      }
+      .MuiCircularProgress-circleDisableShrink {
+        animation: none;
+      }
+      .BootDivLoading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-flow: column;
+      }
+
+    </style>
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Material UI App 02</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- <script data-consolejs-channel="c11f523b-dfe2-2a3a-f796-8bfd57db45fc" src="https://remotejs.com/agent/agent.js"></script> -->
+  </head>
+  <body style="margin:0">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="bootDivLoading" class="BootDivLoading">
+      <div class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate" style="width: 40px; height: 40px;" role="progressbar">
+        <svg class="MuiCircularProgress-svg" viewBox="22 22 44 44">
+          <circle class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate" cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle>
+        </svg>
+      </div>
+      <div style="text-align: center; height: 21px">
+      </div>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>

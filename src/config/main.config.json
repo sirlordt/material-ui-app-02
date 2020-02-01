@@ -1,0 +1,9 @@
+{
+  "serverURIList_comment": [ "http://localhost:3000/", "http://192.168.2.134:3000/" ],
+  "serverURIList": [ "(http:\/\/192.168.2.134):(\\d*)\/", "(http:\/\/localhost):(\\d*)\/" ],
+  "defaultDomain": "default",
+  "domainList": [ "default", "test" ],
+  "bootBackendServerList": [ "http://192.168.2.105:9090/backend-it4systems-logwalker-dev007-main1/system/backend/server/list/development/##domain##/logwalker.logs/1.0.0",
+                             "http://192.168.2.105:9090/backend-it4systems-logwalker-dev007-main/system/backend/server/list/development/##domain##/logwalker.logs/1.0.0" ],
+  "clientId": "web-reactjs-106bf116-2490-431e-96ee-059a38bb5851"
+}
